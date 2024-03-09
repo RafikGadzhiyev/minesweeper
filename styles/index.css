@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+canvas {
+    background-color: gray;
+    width: 750px;
+    height: 750px;
+}
+
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invisible {
+    visibility: hidden;
+    transform: scale(0);
+    position: absolute;
+    z-index: -9999
+}
