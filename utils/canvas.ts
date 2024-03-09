@@ -67,14 +67,14 @@ export const drawGrid = (
             )
 
 
-            // if (cell.isOpened) {
+            if (cell.isOpened) {
                 if(cell.value === -1) {
                     drawBomb(ctx, cell, bombImage)
                 }
                 else if (cell.value > 0) {
                     drawNumber(ctx, cell)
                 }
-            // }
+            }
         }
     }
 }
